@@ -37,7 +37,7 @@ trainer:
 # optimizer configuration
 optimizer:
   # initial learning rate
-  learning_rate: 0.0002
+  learning_rate: 0.005
   # weight decay
   weight_decay: 0.0001
 # loss function configuration
@@ -67,7 +67,7 @@ loaders:
   # batch dimension; if number of GPUs is N > 1, then a batch_size of N * batch_size will automatically be taken for DataParallel
   batch_size: 1
   # how many subprocesses to use for data loading
-  num_workers: 4
+  num_workers: 8
   # path to the raw data within the H5
   raw_internal_path: raw
   # path to the the label data withtin the H5

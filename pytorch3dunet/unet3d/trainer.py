@@ -265,7 +265,7 @@ class UNet3DTrainer:
         t = _move_to_device(t)
         weight = None
         if len(t) == 2:
-            input, target = t
+            input, target = td
         else:
             input, target, weight = t
         return input, target, weight
